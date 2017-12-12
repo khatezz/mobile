@@ -1,0 +1,62 @@
+
+
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title>
+     <ion-icon name="lock"> Log In </ion-icon>
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="bodyColor">
+
+
+<img src="img/brainlogo.png">
+
+
+<!-- <form (ngSubmit)="onSignin(f)" #f="ngForm"> -->
+  <ion-list class="formsDes">
+    <ion-item>
+      
+      <ion-label floating>Username</ion-label>
+      <ion-input type="text"  name="username" [(ngModel)]="log.username"  required></ion-input>
+     <!--  <ion-input type="text" id="username" placeholder="Username" name="username" ngModel class="form-control"  required></ion-input> -->
+    </ion-item>
+
+    <ion-item>
+
+      <ion-label floating>Password</ion-label>
+      <ion-input type="password"  name="password" [(ngModel)]="log.password"  required></ion-input>
+     <!--  <ion-input type="password" id="password" placeholder="Password" name="password" ngModel class="form-control"  required></ion-input> -->
+    </ion-item>
+
+    <ion-item>
+
+      <ion-label floating>Code</ion-label>
+      <ion-input type="password"  name="password" [(ngModel)]="log.code"  required></ion-input>
+     <!--  <ion-input type="password" id="password" placeholder="Password" name="password" ngModel class="form-control"  required></ion-input> -->
+    </ion-item>
+  </ion-list>
+<!-- </form>
+ -->
+<!-- 
+  <button type="submit" [disabled]="!f.valid" ion-button color="default" block  class="btnlogin">Log In</button> -->
+  <button  ion-button color="default" block (click)=onSignin(log) class="btnlogin">Log In</button>
+  <button  ion-button color="default" clear (click)="register()" style="margin-left: 118px;">Register</button>
+
+  <br>
+  
+<!-- 
+  <button ion-button color="light" block (click)="nextPageh();" class="btnsignup">Sign Up</button>
+ -->
+
+
+
+
+</ion-content>
+
+
+
+
+
+        

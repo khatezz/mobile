@@ -1,0 +1,34 @@
+<!--
+  Generated template for the True page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>True or False</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<p class="time"><ion-icon name="timer"></ion-icon> {{min}} : {{sec | number: '2.0'}} </p>
+
+	<ion-list>
+
+		<ion-item *ngFor= "let quest of trues" >
+
+		{{quest.question}}
+			<p>True <input type="radio" [(ngModel)]="ans"  value="True" id="optionsRadios1" checked ></p>
+			<p>False <input type="radio" [(ngModel)]="ans"  value="false" id="optionsRadios2"></p>
+
+			<br>
+			<button ion-button block (click)="answer(ans)">Next</button>
+
+		</ion-item>
+
+	</ion-list>
+
+</ion-content>

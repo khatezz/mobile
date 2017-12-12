@@ -1,0 +1,90 @@
+<!--
+  Generated template for the Typesf page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Types of forces</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="pad">
+
+
+  <ion-card>
+    <img src="img/contact.jpg">
+  </ion-card>
+
+
+	 <ion-list >
+      <ion-item class="item animated slideInLeft">
+        <ion-icon name="book" item-left>
+        </ion-icon>
+         <h2>Contact</h2>
+        <button  ion-button  (click)="prof()" clear item-right class="view">{{showuser ? "Hide" : "View"}}</button>
+      </ion-item>
+    </ion-list>
+   
+
+    <div *ngIf="showuser">
+        <ion-list>
+         
+          <ion-card>
+             	<p class="contents">Created between two touching objects
+             	 (holding a pencil,hugging someone, etc)
+    			     </p>
+           </ion-card>
+         
+        </ion-list>
+     </div>  
+
+      <ion-list>
+      <ion-item style="-webkit-animation-duration:2s;" class="item animated slideInLeft">
+        <ion-icon name="book" item-left>
+        </ion-icon>
+         <h2>Gravity</h2>
+        <button  ion-button  (click)="prof1()" clear item-right class="view">{{showuser1 ? "Hide" : "View"}}</button>
+      </ion-item>
+    </ion-list>
+
+      <div *ngIf="showuser1">
+        <ion-list>
+         
+          <ion-card>
+         	  <p class="contents">Force of attraction between two objects, Earth’s gravity pulls on all objects</p>
+          </ion-card>
+          
+        </ion-list>
+     </div>  
+
+
+
+      <ion-list>
+      <ion-item style="-webkit-animation-duration:3s;" class="item animated slideInLeft">
+        <ion-icon name="book" item-left>
+        </ion-icon>
+         <h2>Friction</h2>
+        <button  ion-button  (click)="prof2()" clear item-right class="view">{{showuser2 ? "Hide" : "View"}}</button>
+      </ion-item>
+    </ion-list>
+
+
+      <div *ngIf="showuser2">
+        <ion-list>
+         
+          <ion-card>
+         	  <p class="contents">A force that resists motion between two surfaces that are pressed together </p>
+          </ion-card>
+         
+        </ion-list>
+     </div>  
+
+
+
+
+</ion-content>

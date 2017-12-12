@@ -1,0 +1,121 @@
+<!--
+  Generated template for the Lesson1 page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Forces and Motion</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="pad">
+
+<!-- <button ion-button outline large id="btn">Lesson 1</button>
+ 
+  <div class="des" (swipe)="click()" style="background-color: rgba(128, 128, 128, 0.39);margin-top: 110px;">    
+     
+      <p> <ion-icon name="arrow-dropleft"></ion-icon>Swipe  <ion-icon name="arrow-dropright"></ion-icon></p>  
+     
+  </div> -->
+  
+
+ <h2 style="color: white;">Lessons:</h2>      
+<div class="font">
+      <ion-list>
+        <button ion-item *ngFor="let p of pages" (click)="openPage(p)" class="item animated zoomIn">
+          <ion-icon [name]="p.icon"></ion-icon>
+          {{p.title}}
+        </button>
+
+        <button ion-item (click)="click()" class="item animated zoomIn">
+        <ion-icon name="book"></ion-icon> Balance and Unbalance Force</button>
+        <button ion-item (click)="click1()" class="item animated zoomIn">
+        <ion-icon name="book"></ion-icon> Newtons three law of Motion</button>
+        <button ion-item (click)="click2()" class="item animated zoomIn">
+        <ion-icon name="book"></ion-icon> Law of Inertia</button>
+         <button ion-item (click)="click4()" class="item animated zoomIn">
+        <ion-icon name="book"></ion-icon> Law of Accelaration</button>
+        <button ion-item (click)="click3()" class="item animated zoomIn">
+        <ion-icon name="book"></ion-icon> Law of Interaction</button>
+       
+
+      </ion-list>
+</div>
+
+   <button ion-button round (click)="hurry()" class="item animated rubberBand" style="-webkit-animation-duration:2s;
+    width: 186px; height: 54px;">Hurry! Answer me!
+    </button>
+
+<ion-fab right bottom>
+          <button ion-fab color="primary" (click)="presentActionSheet()"><ion-icon name="arrow-up"></ion-icon></button>
+            
+        </ion-fab>
+
+	<!-- <div padding style="background-color: aliceblue;">
+      <ion-segment [(ngModel)]="selection">
+      	
+        <ion-segment-button value="videos">
+          Lesson 1
+        </ion-segment-button>
+        <ion-segment-button value="image" >
+         Activities
+        </ion-segment-button>
+         
+      </ion-segment>
+    </div>
+
+
+      <div [ngSwitch]="selection">
+        <ion-list *ngSwitchCase="'videos'">
+          <ion-item>
+           
+            <h2>Lesson 1</h2>
+          
+            	<button ion-button  color="primary" block (click)="page1()">What is Motion</button>
+				<button ion-button  color="primary" block (click)="page1()">Newton's Three Laws of Motion</button>
+				<button ion-button  color="primary" block (click)="page1()">Newton’s First of Motion: Law of Inertia</button>
+				<button ion-button  color="primary" block (click)="page1()">Newton’s Second Law of Motion:<br>Law of Acceleration</button>
+				<button ion-button  color="primary" block (click)="page1()">Newton’s Third Law of Motion: <br>Law of Action-Reaction</button>
+			
+
+          </ion-item>
+          
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'image'">
+          <ion-item>
+           
+            <h2>Activities</h2>
+
+            <button ion-button (click)="nextPage()" color="primary" block>Activity 1</button>
+      			<button ion-button (click)="nextPage1()" color="primary" block>Activity 2</button>
+      			<button ion-button (click)="nextPage2()" color="primary" block>Activity 3</button>
+			
+
+          </ion-item>
+          
+        </ion-list>
+
+
+       
+
+         
+      </div> -->
+
+			
+
+     
+
+			
+
+</ion-content>
+
+
+<script type="text/javascript">
+  
+</script>

@@ -1,0 +1,45 @@
+<!--
+  Generated template for the Subpart page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Forces and Motion</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="pad">
+	<ion-card>
+	<img src="img/m1.png">
+		<ion-card-title>Forces and Motion</ion-card-title>
+
+		<p class="content">
+
+			A push or pull<br><br>
+			Change the motion of all objects<br><br>
+			Anytime you see something moving, you can be sure that a force created its motion.
+
+			<br><br>
+
+			Most of the motions we come across in our daily life are non-uniform and the
+			primary cause of changes in motion is FORCE. In this module, you will learn about
+			the effects of force on motion. Newton’s Three Laws of Motion – the central
+			organizing principle of classical mechanics – will be presented and applied to real-life
+			situations. 
+
+
+		</p>
+		<button ion-button id="press" (press)="click()">Press me!</button> <br>
+		<button ion-button clear (click)="types()"><u>Types of Forces</u></button>
+
+		<ion-fab right bottom style="position: fixed;">
+          <button ion-fab color="primary" (click)="presentActionSheet()"><ion-icon name="arrow-up"></ion-icon></button>
+            
+        </ion-fab>
+	</ion-card>
+</ion-content>

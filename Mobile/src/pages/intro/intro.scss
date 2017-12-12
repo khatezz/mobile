@@ -1,0 +1,31 @@
+page-intro {
+
+	 .pad{
+
+    	background-image:url('../../img/backg.png');
+    }
+
+    .pads{
+    	background-color: rgba(0, 0, 0, 0.34);
+   
+    padding-top: 21px;
+    margin-top: -58px;
+}
+
+
+
+	.next{
+	
+    animation-name: drive;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+	}
+
+	@keyframes drive{
+		from { transform: translateX(-350px)}
+		to{ transform: translateX(1000px)}
+	}
+    
+
+}

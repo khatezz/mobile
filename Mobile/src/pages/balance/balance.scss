@@ -1,0 +1,21 @@
+page-balance {
+
+	.body{
+		text-align:justify;
+	}
+
+	.item {
+    contain: content;
+    height: 90px;
+    margin-bottom: 8px;
+    }
+
+    .pad{
+
+    	background-image:url('../../img/backg.png');
+    }
+
+    .indent{
+           padding-top: 25px;
+    }
+}

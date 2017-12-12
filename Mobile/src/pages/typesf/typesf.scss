@@ -1,0 +1,35 @@
+page-typesf {
+
+	p{
+	font-size:18px;
+	font-family:century gothic;
+	}
+
+	.item-md p {
+    overflow: inherit;
+    margin: 0 0 2px;
+    font-size: 1.4rem;
+    line-height: normal;
+    text-overflow: inherit;
+    color: #666;
+    font-size: 18px;
+
+
+}
+
+    .pad{
+
+      background-image:url('../../img/backg.png');
+    }
+
+
+    .contents{
+        
+        font-size: 18px;
+        padding-bottom: 11px;
+        font-family: century gothic;
+        text-align: justify;
+        padding:10px;
+    }
+    
+}

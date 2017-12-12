@@ -1,0 +1,80 @@
+page-profile {
+
+
+
+.card-background-page { 
+ion-card { position: relative; text-align: center; } }
+
+
+
+	.fonts{
+		font-family: cursive;
+    font-size: 15px;
+    padding: 15px;
+    background-color: #ebeff3;
+    text-align:left;
+    margin-left: -16px;
+    margin-right: -16px;
+    margin-top: -31px;
+	}
+
+	.lizame {
+    width: 133px;
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 146px;
+}
+	
+
+	.body{
+	 background-color:#50bcdc;
+
+	}
+
+	.card{
+		background-color:#50bcdc;
+    padding-bottom: 36px;
+    padding-top: 13px;
+	}
+
+	.toolbar-title-md{
+
+			color:#50bcdc;
+			margin-bottom: 8px;
+			margin-top: 23px;
+
+	}
+
+	.card-md p{
+	color:white;
+	font-size:15px;
+	}
+
+
+	.item-md{
+		background-color:ghostwhite;
+	}
+
+	.star{
+		color:yellow;
+	}
+
+	.view{
+		color: #e4eef1;
+        background-color: #50bcdc;
+	}
+
+	.item-md h2{
+		color:#50bcdc;
+	}
+
+
+	.editb{
+		color:white;
+	}
+
+	.button-outline-md-primary{
+		border-color:white;
+	}
+
+}

@@ -1,0 +1,120 @@
+<ion-header>
+  <ion-navbar color="primary">
+   <button ion-button menuToggle >
+      <ion-icon name="menu" ></ion-icon>
+    </button>
+    <ion-title>
+      Library
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="body" style="background-color: #eaedf1;">
+
+	
+ <div padding style="background-color: aliceblue;">
+      <ion-segment [(ngModel)]="selection">
+        <ion-segment-button value="videos">
+          Videos
+        </ion-segment-button>
+        <ion-segment-button value="image">
+          Image
+        </ion-segment-button>
+         <ion-segment-button value="docu">
+          Documents
+        </ion-segment-button>
+      </ion-segment>
+    </div>
+
+
+      <div [ngSwitch]="selection">
+        <ion-list *ngSwitchCase="'videos'">
+          <ion-item>
+           
+            <h2>No Downloaded Videos</h2>
+          </ion-item>
+          
+        </ion-list>
+
+        <ion-list *ngSwitchCase="'image'">
+          <ion-item>
+           
+            <h2>No Downloaded Image</h2>
+          </ion-item>
+          
+        </ion-list>
+
+         <ion-list *ngSwitchCase="'docu'">
+          <ion-item>
+           
+            <h2>No Downloaded Documents</h2>
+          </ion-item>
+          
+        </ion-list>
+      </div>
+
+	 <!-- <ion-slides pager>
+
+      <ion-slide style="background-color:rgb(249, 244, 244);">
+        <h4 style="font-family: century gothic;">No Downloaded Videos</h4>
+        <button ion-button outline (click)="clickme()" >click me!</button>
+      </ion-slide>
+
+      <ion-slide style="background-color:rgb(249, 240, 240);">
+        <h4 style="font-family: century gothic;">No Downloaded Image</h4>
+        <button ion-button outline (click)="clickme1()" >click me!</button>
+
+      </ion-slide>
+
+      <ion-slide style="background-color: rgb(247, 233, 233);">
+        <h4 style="font-family: century gothic;">No Downloaded Documents </h4>
+        <button ion-button outline (click)="clickme2()" >click me!</button>
+
+      </ion-slide>
+
+    </ion-slides>
+ -->
+
+
+ <!-- <ion-slides pager>
+
+      <ion-slide style="background-color:rgb(249, 244, 244);">
+        <h4 style="font-family: century gothic;">Laws Of Motion</h4>
+        <button ion-button outline (click)="lesson1();" >View</button>
+      </ion-slide>
+
+      <ion-slide style="background-color:rgb(249, 240, 240);">
+        <h4 style="font-family: century gothic;">Work, Power and Energy</h4>
+        <button ion-button outline (click)="lesson2();" >View</button>
+
+      </ion-slide>
+
+      <ion-slide style="background-color: rgb(247, 233, 233);">
+        <h4 style="font-family: century gothic;">Sound </h4>
+        <button ion-button outline (click)="lesson3();" >View</button>
+
+      </ion-slide>
+
+
+       <ion-slide style="background-color: rgb(247, 233, 233);">
+        <h4 style="font-family: century gothic;">Light </h4>
+        <button ion-button outline (click)="lesson4();" >View</button>
+
+      </ion-slide>
+
+       <ion-slide style="background-color: rgb(247, 233, 233);">
+        <h4 style="font-family: century gothic;">Heat </h4>
+        <button ion-button outline (click)="lesson5();" >View</button>
+
+      </ion-slide>
+
+       <ion-slide style="background-color: rgb(247, 233, 233);">
+        <h4 style="font-family: century gothic;">Electricity </h4>
+        <button ion-button outline (click)="lesson6();" >View</button>
+
+      </ion-slide>
+
+    </ion-slides> -->
+
+
+</ion-content>

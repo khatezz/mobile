@@ -1,0 +1,87 @@
+<ion-header>
+  <ion-navbar color="primary">
+   <button ion-button menuToggle >
+      <ion-icon name="menu" ></ion-icon>
+    </button>
+    <ion-title>
+      Profile
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+
+
+<ion-content padding class="body">
+
+<div class="card-background-page">
+    <ion-card>
+
+    	<img src="img/ma.jpg" class="lizame"/>
+
+      <button ion-button outline color="primary" small class="editb">Edit Profile</button>
+        <br><br>
+         
+                <!-- <p>{{user.fname}}</p>   -->  
+     
+    </ion-card>
+</div>	
+
+  
+  <div class="fonts">
+    <ion-title class="title">Profile</ion-title>
+
+    <ion-list>
+      <ion-item>
+        <ion-icon name="star" item-left class="star">
+        </ion-icon>
+        <h2>Achievements</h2>
+        <button ion-button clear item-right class="view">View</button>
+      </ion-item>
+    </ion-list>
+
+
+    <ion-list>
+      <ion-item>
+        <ion-icon name="book" item-left>
+        </ion-icon>
+        <h2>Quiz Results</h2>
+        <button ion-button clear item-right style="color: #e4eef1;
+        background-color: #50bcdc;" (click)="quiz()">View</button>
+      </ion-item>
+    </ion-list>
+
+
+    
+    <ion-list>
+      <ion-item>
+        <ion-icon name="person" item-left>
+        </ion-icon>
+         <h2>Profile</h2>
+        <button  ion-button  (click)="prof()" clear item-right class="view">{{showuser ? "Hide" : "View"}}</button>
+      </ion-item>
+    </ion-list>
+   
+
+    <div *ngIf="showuser">
+        <ion-list>
+          <ion-item class="view">
+          First Name: {{user.fname}}<br>
+          Last Name: {{user.lname}}<br>
+          User Name: {{user.username}}
+          </ion-item>
+        </ion-list>
+     </div>  
+  </div>
+ 
+<!--  <ion-list>
+    <ion-item *ngFor= "let quiz of quizzes ">
+     <ion-thumbnail>
+        <img src="uploads/avatars/{{quiz.avatar}}">
+      </ion-thumbnail>
+    </ion-item>
+ </ion-list>
+   -->
+ 
+
+</ion-content>

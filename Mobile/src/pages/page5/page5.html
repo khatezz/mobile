@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Living things and Thier Environment</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="body">
+  <ion-list class="lesson">
+  <br>
+  <h3 style="color:black;">Lesson:</h3>
+    <button ion-item (click)="lesson1()">Stuctures and Fuctions:<br> Focus on the Digestive System</button>
+    <button ion-item (click)="lesson2()">Heridity: Inheritance and<br>Variations and Traits</button>
+    <button ion-item (click)="lesson3()">Biodiversity</button>
+    <button ion-item (click)="lesson4()">Ecosystem</button>
+    
+  </ion-list>
+
+ <button ion-button color="primary" (click)="quiz4()">Take a quiz!</button>
+  
+
+
+</ion-content>

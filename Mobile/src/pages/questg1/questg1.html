@@ -1,0 +1,542 @@
+<!--
+  Generated template for the Questg1 page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>General Quiz</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+	 
+	<p class="time"> <ion-icon name="timer"></ion-icon> {{min}} : {{sec | number: '2.0'}} </p>
+	<ion-card class="body">
+			1.This is thought to be the waves caused by the vibration of the object, whether or not they are heard by the ears
+
+			<ion-list radio-group [(ngModel)]="ans.answer">
+			  <ion-item>
+			    <ion-label>Light</ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>Sound</ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>Gravity</ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			</ion-list>
+
+
+			2. Two particles with opposite charges will be attracted to each other
+
+			<ion-list radio-group [(ngModel)]="ans.answer2">
+			  <ion-item>
+			    <ion-label>True</ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>False</ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			 
+
+			</ion-list>
+
+
+			3. There must be particles in the air for sound to be heard.
+
+			<ion-list radio-group [(ngModel)]="ans.answer3">
+			  <ion-item>
+			    <ion-label>True</ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>False</ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			</ion-list>
+
+			4. Energy emitted in the form of a wave as a result of the movement of electric charges is
+
+			<ion-list radio-group [(ngModel)]="ans.answer4">
+			  <ion-item>
+			    <ion-label>horsepower</ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>electromagnetic radiation </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+
+			   <ion-item>
+			    <ion-label>hydroelectric energy </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			</ion-list>
+
+			5. Sound waves of more than 20,000 waves per second are
+
+			<ion-list radio-group [(ngModel)]="ans.answer5">
+			  <ion-item>
+			    <ion-label>ultrasonic </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>subsonic  </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+
+			   <ion-item>
+			    <ion-label>supersonic </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			</ion-list>
+
+			6. Sound waves that are regular and organized making them pleasing to the ear are called
+
+			<ion-list radio-group [(ngModel)]="ans.answer6">
+			  <ion-item>
+			    <ion-label>noise  </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>music   </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+
+			   <ion-item>
+			    <ion-label>cacophony </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			</ion-list>
+
+
+			7. This the study of charges in motion.
+
+			<ion-list radio-group [(ngModel)]="ans.answer7">
+			  <ion-item>
+			    <ion-label>electrostatics   </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>electrodynamics    </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+
+			   <ion-item>
+			    <ion-label>gravity </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			</ion-list>
+
+			8. A lessening in the air of the molecules is called
+
+
+			<ion-list radio-group [(ngModel)]="ans.answer8">
+			  <ion-item>
+			    <ion-label>rarefaction    </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>condensation     </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+
+			   <ion-item>
+			    <ion-label>evaporation </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			</ion-list>
+
+			9. The speed of light is around
+
+			<ion-list radio-group [(ngModel)]="ans.answer9">
+			  <ion-item>
+			    <ion-label>186,000 miles per second </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>186,000 miles per minute </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+
+			   <ion-item>
+			    <ion-label>186,000 miles per hour</ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			</ion-list>
+
+			10. Two particles with the same charge will repel or drive away from each other
+
+			<ion-list radio-group [(ngModel)]="ans.answer10">
+			  <ion-item>
+			    <ion-label>True </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>False</ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			</ion-list>
+
+
+			11. This is the measure of electric current.
+
+			<ion-list radio-group [(ngModel)]="ans.answer11">
+			  <ion-item>
+			    <ion-label>ohm  </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>ampere </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>volt </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>coulomb</ion-label>
+			    <ion-radio  value="d" ></ion-radio>
+			  </ion-item>
+
+			</ion-list>
+
+			12. Electromagnetic waves need matter to move
+
+			<ion-list radio-group [(ngModel)]="ans.answer12">
+			  <ion-item>
+			    <ion-label>True  </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>False </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   
+			</ion-list>
+
+			13. Humans can see all light waves.
+
+			<ion-list radio-group [(ngModel)]="ans.answer13">
+			  <ion-item>
+			    <ion-label>True  </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>False </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+			 </ion-list>
+
+			14. This is a measure of charge.
+
+				<ion-list radio-group [(ngModel)]="ans.answer14">
+			  <ion-item>
+			    <ion-label>ohm   </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>ampere  </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>volt   </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>coulomb  </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			  </ion-list>
+
+
+			15. This device is used to open and close a circuit.
+
+			<ion-list radio-group [(ngModel)]="ans.answer15">
+			  <ion-item>
+			    <ion-label>battery    </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>bulb   </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>switch   </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			 
+
+			  </ion-list>
+
+
+			16. The crowding together of the molecules of air is called
+
+			<ion-list radio-group [(ngModel)]="ans.answer16">
+			  <ion-item>
+			    <ion-label>rarefaction     </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>condensation    </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>evaporation  </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			 
+
+			  </ion-list>
+
+			  17. Materials that allow electricity to flow through them easily such as copper are called
+
+
+			<ion-list radio-group [(ngModel)]="ans.answer17">
+			  <ion-item>
+			    <ion-label>insulators      </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>semiconductors     </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>conductors  </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			  </ion-list>
+
+
+			 18. The electromagnetic radiation of a wavelength is called
+
+			 <ion-list radio-group [(ngModel)]="ans.answer18">
+			  <ion-item>
+			    <ion-label>sound </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>light</ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>kinetics</ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			  </ion-list>
+
+
+			  19. Sound waves travel through the air
+
+
+			   <ion-list radio-group [(ngModel)]="ans.answer19">
+			  <ion-item>
+			    <ion-label>  by vibrating or moving the particles of matter in the air </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>  by the force of gravity pulling them to the earth</ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>by magnetic force</ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			  </ion-list>
+
+
+			  20. These materials conduct electricity under certain circumstances
+
+			  <ion-list radio-group [(ngModel)]="ans.answer20">
+			  <ion-item>
+			    <ion-label>  insulators </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>  conductors </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>semiconductors</ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			  </ion-list>
+
+
+			  21. This is the study of charges, or charged objects that do not involve moving charges or current.
+
+
+			  <ion-list radio-group [(ngModel)]="ans.answer21">
+			  <ion-item>
+			    <ion-label>  electrostatics  </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>  electrodynamics  </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>gravity</ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			  </ion-list>
+
+			  22. When one has connected a conductor, a source of electricity such as a battery and an appliance such as a bulb, one has created an electric
+
+
+			   <ion-list radio-group [(ngModel)]="ans.answer22">
+			  <ion-item>
+			    <ion-label>insulator </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>  circuit   </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>switch</ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			  </ion-list>	
+
+
+			  23. The study of light is called	  
+
+			  <ion-list radio-group [(ngModel)]="ans.answer23">
+			  <ion-item>
+			    <ion-label>optics  </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>  photons    </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>lasers</ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			  </ion-list>
+
+			  24. This measures electromotive force	
+
+			   <ion-list radio-group [(ngModel)]="ans.answer24">
+			  <ion-item>
+			    <ion-label>ohm   </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>  ampere     </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>volt </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>coulomb </ion-label>
+			    <ion-radio  value="d" ></ion-radio>
+			  </ion-item>
+
+			  </ion-list>
+
+			  25. The sound waves below 20 waves per second
+
+			   <ion-list radio-group [(ngModel)]="ans.answer25">
+			  <ion-item>
+			    <ion-label>supersonic    </ion-label>
+			    <ion-radio  value="a" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>  subsonic      </ion-label>
+			    <ion-radio  value="b" ></ion-radio>
+			  </ion-item>
+
+			   <ion-item>
+			    <ion-label>ultrasonic </ion-label>
+			    <ion-radio  value="c" ></ion-radio>
+			  </ion-item>
+
+			  </ion-list>
+
+
+			  <button ion-button color="primary" (click)="answer(ans)" block>Submit</button>
+	</ion-card>
+
+</ion-content>

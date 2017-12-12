@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Force, Motion and Energy</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="body">
+
+
+<div class="lesson">
+  <ion-list >
+  <br>
+  <h3>Lessons:</h3>
+    <button ion-item (click)="lesson1();">Laws Of Motion</button>
+    <button ion-item (click)="lesson2();">Work, Power and Energy</button>
+    <button ion-item (click)="nextPage1();">Sound</button>
+    <button ion-item (click)="lesson4();">Light</button>
+    <button ion-item (click)="lesson5();">Heat</button>
+    <button ion-item (click)="lesson6();">Electricity</button>
+  
+  </ion-list>
+
+
+</div>
+   <button ion-button (click)="quiz1()">Take a quiz!</button>
+
+
+</ion-content>

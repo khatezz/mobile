@@ -1,0 +1,55 @@
+page-lesson1 {
+
+
+	.body{
+		text-align:justify;
+	}
+
+	.item-md .item-button {
+    padding: 0 .6em;
+    height: 46px;
+    font-size: 1.2rem;
+}
+
+	
+
+  ion-card {
+    position: relative;
+    text-align: center;
+  }
+
+ 
+
+
+
+.button:hover {background-color: #a0dfdf;}
+
+.button:active {
+  background-color: #a0dfdf;;
+  
+  transform: translateY(4px);
+}
+
+
+ .pad{
+
+      background-image:url('../../img/eco.jpg');
+    }
+
+   page-lesson1 img {
+    height: 334px;
+}
+
+  .contentpad{
+    text-align: center;
+    margin-top: -233px;
+    font-family: monospace;
+  }
+
+  .button-inner {
+    font-size: 18px;
+    color: black;
+  }
+
+
+}

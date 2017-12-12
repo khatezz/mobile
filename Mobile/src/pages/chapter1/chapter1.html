@@ -1,0 +1,56 @@
+<!--
+  Generated template for the Chapter1 page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Lessons</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="pad">
+	<ion-card>
+  <div class="pad">
+
+    <div class="image">
+        <ion-list>
+          <ion-item>
+            <ion-avatar>
+              <img src="img/default.jpg">
+            </ion-avatar>
+          </ion-item>
+        </ion-list>
+    </div>
+
+    <div class="welcome">
+      <p id="head">Welcome</p>
+      <p id="head1"> Students!!</p>
+        <p id="subhead">to begin with</p>
+          <br>
+          <br>
+        
+
+              <ion-list>
+        <ion-item-sliding>
+          <ion-item>
+           <p id="text">Please pull here <ion-icon name="arrow-back"></ion-icon> </p>
+          </ion-item>
+          <ion-item-options side="right">
+            <button ion-button color="primary" (click)="swipe();">
+              
+              <p style="color: white;">Let's <br>getStarted!</p>
+            </button>
+          </ion-item-options>
+        </ion-item-sliding>
+        </ion-list>
+
+  </div>
+  </div>
+  </ion-card>
+</ion-content>

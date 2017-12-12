@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar color="dark"> 
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Earth and Space</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="body">
+
+  <ion-list class="lesson">
+  <br>
+  <h3>Lesson</h3>
+    <button ion-item (click)="lesson1()">EarthQuakes and Faults</button>
+    <button ion-item (click)="lesson2()">Understanding Typhoons</button>
+    <button ion-item (click)="lesson3()">Other Members of Solar System</button>
+    
+  </ion-list>
+
+ <button ion-button color="primary" (click)="quiz2()">Take a quiz!</button>
+
+
+  
+</ion-content>

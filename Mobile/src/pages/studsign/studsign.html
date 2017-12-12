@@ -1,0 +1,65 @@
+<!--
+  Generated template for the Studsign page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color= "primary">
+    <ion-title>Student's Registration</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list class="signForms">
+
+
+ <ion-item>
+    <ion-input  [(ngModel)]="reg.fname" type="text" placeholder="First Name"></ion-input>
+  </ion-item>
+  
+
+   <ion-item>
+    <ion-input [(ngModel)]="reg.lname"  type="text" placeholder="Last Name"></ion-input>
+  </ion-item>
+  
+   <ion-item>
+
+    <ion-select [(ngModel)]="reg.section" placeholder="Section">
+      <ion-option value="1">Charles</ion-option>
+      <ion-option value="2">Edward</ion-option>
+      <ion-option value="3">Augustine</ion-option>
+      <ion-option value="4">Dominic</ion-option>
+    </ion-select>
+
+  </ion-item>
+
+  
+
+  <ion-item>
+    <ion-input [(ngModel)]="reg.username" type="text" placeholder="Username"></ion-input>
+  </ion-item>
+
+
+
+  <ion-item>
+    <ion-input [(ngModel)]="reg.password" type="password" placeholder="Password"></ion-input>
+  </ion-item>
+
+  
+ 
+
+  
+
+
+
+ </ion-list>
+
+	<button ion-button color="default" block (click)="register(reg);">Sign Up</button>
+  <br>
+
+
+</ion-content>

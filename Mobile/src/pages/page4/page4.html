@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Matter</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="body">
+ <ion-list class="lesson">
+  <br>
+  <h3>Lesson:</h3>
+    <button ion-item (click)="lesson1()"> The Particle Nature of Matter</button>
+    <button ion-item (click)="lesson2()">Atomic Structure</button>
+    <button ion-item (click)="lesson3()">Periodic Table of Elements</button>
+    
+  </ion-list>
+
+ <button ion-button color="primary" (click)="quiz3()">Take a quiz!</button>
+  
+
+</ion-content>

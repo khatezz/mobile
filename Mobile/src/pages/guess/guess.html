@@ -1,0 +1,54 @@
+<!--
+  Generated template for the Guess page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar color="dark">
+    <ion-title>Guess that Picture!</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding class="pad">
+	<p>
+		1. Choose a picture that defines work.
+	</p>
+		<div *ngIf="showcheck">
+			<div class="adjust">
+				<img src="img/che.png" style="height: 100px;width: 100px;">
+			</div>
+		</div>
+
+		<div *ngIf="showcheck1">
+
+			<div style="position: absolute;left: 62%;top: 25%;">
+				<img src="img/che.png" style="height: 100px;width: 100px;">
+			</div>
+		</div>
+
+		<div *ngIf="showcheck2">
+			<div style="position: absolute;left: 12%;top: 60%;">
+				<img src="img/che.png" style="height: 100px;width: 100px;">
+			</div>
+		</div>
+
+		<div *ngIf="showcheck3">
+			<div style="position: absolute;left: 62%;top: 60%;">
+				<img src="img/che.png" style="height: 100px;width: 100px;">
+			</div>
+		</div>
+
+		<img src="img/p1.jpg" (click)="click1()">
+		<img src="img/p2.jpg" (click)="click2()">
+		<img src="img/p3.jpg" (click)="click3()">
+		<img src="img/p4.jpg" (click)="click4()">
+	
+	<button ion-button (click)="next()" block>Next</button>
+	
+	
+
+</ion-content>
